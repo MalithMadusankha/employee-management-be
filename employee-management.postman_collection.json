@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "adacc881-a706-4f8b-9e31-b09cc0297028",
+		"name": "employee-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15423157"
+	},
+	"item": [
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"full_name\": \"Madusankha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/employee/6408597584074a98f52e85e1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employee",
+						"6408597584074a98f52e85e1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee By ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/employee/64096e11141b4bdd3a1dafae",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employee",
+						"64096e11141b4bdd3a1dafae"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter Employee By Type",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/employee/type/Other",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employee",
+						"type",
+						"Other"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/employee/Tablet",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employee",
+						"Tablet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjUwYmE0MDU0YjM4OWY1MTJiNWZjOSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2MDk0NzY3OSwiZXhwIjoxNjYxMjA2ODc5fQ.RDewUbcMdljmzKwOAIC51dnoWr2WGA3fN-M-5iqZut8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"full_name\": \"Shenal\",\r\n        \"name_with_initials\": \"K S Shenal\",\r\n        \"display_name\": \"S Shenal\",\r\n        \"employee_id\": \"\",\r\n        \"gender\": \"Male\",\r\n        \"date_of_birth\": \"1999-04-08\",\r\n        \"email\": \"mm@gm.com\",\r\n        \"mobile_number\": \"0770699151\",\r\n        \"designation\": \"Software engineer\",\r\n        \"employee_type\": \"Other\",\r\n        \"join_date\": \"2021-05-15\",\r\n        \"experience\": 1,\r\n        \"salary\": 200000,\r\n        \"personal_notes\": \"personal_notes personal_notes\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Employees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
