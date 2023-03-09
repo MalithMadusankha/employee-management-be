@@ -26,6 +26,12 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+
+## Clone App
+```bash
+$ git clone https://github.com/MalithMadusankha/employee-management-be.git
+```
+
 ## Installation
 
 ```bash
